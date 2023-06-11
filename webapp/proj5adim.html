@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to COURSE</title>
+<style>
+body {
+  background-image: url('diff.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid tomato;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  position: absolute;
+  top: 15%;
+  right: 40%;
+  width: 100%;
+}
+
+h3 {
+  text-align: center;
+  color: dodgerblue;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: dodgerblue;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.forgotpsd a {
+  color: #d41c1c;
+  text-decoration: none;
+}
+
+.register a {
+  color: dodgerblue;
+  text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <form action="proj5adminval" method="post">
+    <h3>Welcome to Admin</h3>
+    <h3>Sign in</h3>
+    <p>Sign in with username and password</p>
+
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+    <br> <br>
+    <button type="submit">Login</button>
+    <br><br>
+
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+
+    <p class="forgotpsd">Forgot Password?</a></p>
+
+    <p class="register">Not a member?  Register here!</a></p>
+  </form>
+</div>
+</body>
+</html>
